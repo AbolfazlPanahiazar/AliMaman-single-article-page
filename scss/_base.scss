@@ -1,32 +1,40 @@
+// ********** Some basic stuff **********
 :root {
   --color-Primary: #eb2f64;
   --color-Primary-light: #ff3366;
   --color-Primary-dark: #ba265d;
+
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
+
   --color-Grey-dark-1: #333;
   --color-Grey-dark-2: #777;
-  --color-Grey-dark-3: #999; }
+  --color-Grey-dark-3: #999;
+}
 
 @font-face {
   font-family: "Vazir";
-  src: url(../fonts/Vazir.eot) format("eot"), url(../fonts/Vazir.woff) format("woff"); }
+  src: url(../fonts/Vazir.eot) format("eot"), url(../fonts/Vazir.woff) format("woff");
+}
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box; }
+  font-size: 62.5%; // rem = 10px
+  box-sizing: border-box;
+}
 
 body {
   background-image: linear-gradient(to right bottom, var(--color-Primary-light), var(--color-Primary-dark));
   background-repeat: no-repeat;
-  color: var(--color-Grey-dark-2);
-  font-family: "Vazir"; }
+  color: (var(--color-Grey-dark-2));
+  font-family: "Vazir";
+}
