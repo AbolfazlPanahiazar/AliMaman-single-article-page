@@ -41,7 +41,10 @@ body {
 .header {
   height: 7rem;
   background-color: #ffffff;
-  border-bottom: var(--color-grey-light-2); }
+  border-bottom: var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .header:hover:after {
   transform: scaleX(1); }
@@ -57,16 +60,76 @@ body {
   flex: 1; }
 
 .logo {
-  height: 3.25rem; }
+  height: 7rem;
+  margin-left: 2.5rem; }
 
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    font-family: "Vazir";
+    font-size: 1.5rem;
+    direction: rtl;
+    background-color: var(--color-grey-light-2);
+    padding: 0.5rem 2rem;
+    border: none;
+    color: inherit;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-left: -3.25rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
+  .search__button {
+    border: none;
+    background-color: transparent;
+    z-index: 1; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3); }
 
-.user-nav__icon {
-  width: 2rem;
-  height: 2rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  border-radius: 50%; }
+.user-nav {
+  display: flex;
+  align-items: center;
+  align-self: stretch; }
+  .user-nav > * {
+    padding: 0 1.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .user-nav > *:hover {
+      background-color: var(--color-grey-light-3); }
+  .user-nav__icon-box {
+    position: relative; }
+  .user-nav__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-grey-dark-2); }
+  .user-nav__notification {
+    font-size: 1.1rem;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--color-grey-light-1);
+    text-align: center;
+    background-color: var(--color-Primary-light);
+    top: 1.4rem;
+    right: 1rem; }
+  .user-nav__user-photo {
+    height: 5rem;
+    border-radius: 50%; }
+  .user-nav__user-name {
+    margin-right: 0.5rem;
+    font-size: 1.5rem; }

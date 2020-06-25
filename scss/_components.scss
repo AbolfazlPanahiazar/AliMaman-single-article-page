@@ -1,43 +1,102 @@
 // ********** logo **********
 .logo {
-  height: 3.25rem;
+  height: 7rem;
+  margin-left: 2.5rem;
 }
 
 // ********** search **********
 .search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &__input {
+    font-family: "Vazir";
+    font-size: 1.5rem;
+    direction: rtl;
+    background-color: var(--color-grey-light-2);
+    padding: 0.5rem 2rem;
+    border: none;
+    color: inherit;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-left: -3.25rem;
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
   }
 
   &__button {
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
 // ********** user navigation **********
 .user-nav {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+
+  & > * {
+    padding: 0 1.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &:hover {
+      background-color: var(--color-grey-light-3);
+    }
+  }
+
   &__icon-box {
+    position: relative;
   }
 
   &__icon {
     width: 2rem;
     height: 2rem;
+    fill: var(--color-grey-dark-2);
   }
 
-  &__notifiacation {
-  }
-
-  &__user {
+  &__notification {
+    font-size: 1.1rem;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--color-grey-light-1);
+    text-align: center;
+    background-color: var(--color-Primary-light);
+    top: 1.4rem;
+    right: 1rem;
   }
 
   &__user-photo {
-    height: 3.75rem;
+    height: 5rem;
     border-radius: 50%;
   }
 
   &__user-name {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
   }
 }
