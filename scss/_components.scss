@@ -166,3 +166,12 @@
   padding: 2rem;
   color: (--color-grey-light-4);
 }
+
+// ********** Gallery **********
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+  }
+}
