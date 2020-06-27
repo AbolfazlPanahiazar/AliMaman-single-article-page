@@ -226,4 +226,8 @@ body {
   width: 100%;
 }
 
+.overview {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
