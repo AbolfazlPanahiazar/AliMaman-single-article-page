@@ -265,3 +265,22 @@
     outline: none;
   }
 }
+
+// ********** main hotet **********
+.main-hotel {
+  direction: rtl;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  hr {
+    margin: 2rem 0;
+  }
+  img {
+    width: 90%;
+  }
+}

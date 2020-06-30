@@ -300,4 +300,22 @@ body {
   outline: none;
 }
 
+.main-hotel {
+  direction: rtl;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-hotel p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.main-hotel hr {
+  margin: 2rem 0;
+}
+.main-hotel img {
+  width: 90%;
+}
+
 /*# sourceMappingURL=style.css.map */
