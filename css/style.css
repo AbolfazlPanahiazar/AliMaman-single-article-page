@@ -67,6 +67,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 .hotel-view {
   height: 180rem;
@@ -77,12 +82,22 @@ body {
   height: 7rem;
   margin-left: 2.5rem;
 }
+@media (max-width: 515px) {
+  .logo {
+    display: none;
+  }
+}
 
 .search {
   flex: 0 0 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 515px) {
+  .search {
+    flex: 0 0 50%;
+  }
 }
 .search__input {
   font-family: "Vazir";
@@ -136,6 +151,11 @@ body {
 }
 .user-nav__icon-box {
   position: relative;
+}
+@media (max-width: 900px) {
+  .user-nav__icon-box {
+    display: none;
+  }
 }
 .user-nav__icon {
   width: 2rem;
@@ -222,6 +242,11 @@ body {
 .gallery {
   display: flex;
 }
+@media (max-width: 515px) {
+  .gallery {
+    display: none;
+  }
+}
 .gallery__photo {
   width: 100%;
 }
@@ -239,6 +264,11 @@ body {
 .overview__stars {
   margin-left: auto;
   display: flex;
+}
+@media (max-width: 515px) {
+  .overview__stars {
+    display: none;
+  }
 }
 .overview__icon-star, .overview__icon-location {
   width: 2rem;
